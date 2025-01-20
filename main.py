@@ -41,8 +41,8 @@ def main():
                 return
             for shot in shots:
                 if object.collision(shot):
-                    object.kill()
                     shot.kill()
+                    object.split()
         
         pygame.display.flip()
 
